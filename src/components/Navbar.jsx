@@ -9,23 +9,23 @@ function Navbar() {
     };
 
     return (
-        <nav
-            className="
-            bg-white dark:bg-slate-800
-            text-gray-900 dark:text-white
-            border-b border-gray-200 dark:border-white/10
-            px-3 sm:px-6 py-2 sm:py-3
-            transition-colors
-            "
-        >
+        <nav className="
+      bg-white dark:bg-slate-800
+      text-gray-900 dark:text-white
+      border-b border-gray-200 dark:border-white/10
+      px-3 sm:px-6 py-2
+      flex justify-between items-center
+      transition-colors
+    ">
+
             {/* LEFT MENU */}
-            <div
-                className="
-                flex flex-wrap items-center
-                gap-3 sm:gap-6
-                text-[11px] sm:text-sm font-medium
-                "
-            >
+            <div className="
+        flex flex-wrap items-center
+        gap-2 sm:gap-6
+        text-[11px] sm:text-sm
+        font-medium
+      ">
+
                 <Link to="/" className="hover:text-blue-400">
                     Dashboard
                 </Link>
@@ -47,7 +47,7 @@ function Navbar() {
                 </Link>
 
                 <Link to="/achievements" className="hover:text-blue-400">
-                    🏅Achievements
+                    🏅 Achievements
                 </Link>
 
                 <Link to="/profile" className="hover:text-blue-400">
@@ -56,7 +56,7 @@ function Navbar() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="flex items-center gap-3 mt-2 sm:mt-0 sm:absolute sm:right-6 sm:top-3">
+            <div className="flex gap-2 sm:gap-4 items-center">
                 <DarkModeToggle />
 
                 <button
@@ -66,6 +66,7 @@ function Navbar() {
                     Logout
                 </button>
             </div>
+
         </nav>
     );
 }
