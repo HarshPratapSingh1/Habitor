@@ -120,7 +120,7 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 🚀 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/Habitor.git
+git clone https://github.com/HarshPratapSingh1/Habitor.git
 cd trackforge
 
 2️⃣ Install Dependencies
