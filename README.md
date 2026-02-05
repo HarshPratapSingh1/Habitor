@@ -119,16 +119,17 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 
 
----
+🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/trackforge.git
+cd trackforge
 
-## ⚙️ Environment Variables
+2️⃣ Install Dependencies
+npm install
 
-Create a `.env` file in the root of your project:
+3️⃣ Add Environment Variables
 
-```env
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
+Create a .env file as shown above.
+
+4️⃣ Run Locally
+npm run dev
