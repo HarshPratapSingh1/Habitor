@@ -60,16 +60,16 @@ It helps you **track daily study sessions, maintain streaks, monitor syllabus pr
 
 ## 🛠 Tech Stack
 
-**Frontend**
+### Frontend
 - React
 - Tailwind CSS
 - Recharts
 
-**Backend / Cloud**
+### Backend / Cloud
 - Firebase Authentication
 - Firebase Firestore
 
-**Utilities**
+### Utilities
 - jsPDF
 - html2canvas
 
@@ -103,7 +103,6 @@ src/
 
 
 
-
 ---
 
 ## ⚙️ Environment Variables
@@ -118,21 +117,18 @@ VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 
-⚠️ Never commit .env files to GitHub
 
 
+---
 
-🚀 Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/trackforge.git
-cd trackforge
+## ⚙️ Environment Variables
 
-2️⃣ Install Dependencies
-npm install
+Create a `.env` file in the root of your project:
 
-3️⃣ Add Environment Variables
-
-Create .env as shown above.
-
-4️⃣ Run Locally
-npm run dev
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
