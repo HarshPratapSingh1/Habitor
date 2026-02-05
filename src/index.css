@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================= GLOBAL UI ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ================= GLASS UI ================= */
+
+.glass {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark Mode Glass */
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Light mode cards */
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode cards */
+
+.dark .card {
+    background: rgba(31, 41, 55, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* ================= HEATMAP WRAPPER ================= */
+
+.heatmap-wrapper {
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+
+/* ================= HEATMAP BASE ================= */
+
+.react-calendar-heatmap {
+    font-family: inherit;
+}
+
+/* Cell styling */
+
+.react-calendar-heatmap rect {
+    width: 13px;
+    height: 13px;
+    rx: 4px;
+    ry: 4px;
+    stroke-width: 1px;
+    shape-rendering: geometricPrecision;
+    transition: all 0.18s ease-in-out;
+}
+
+/* Hover animation */
+
+.react-calendar-heatmap rect:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+/* ================= COLOR SCALE ================= */
+
+/* Empty */
+
+.color-empty {
+    fill: #f1f5f9;
+    stroke: #d1d5db;
+}
+
+/* Low */
+
+.color-scale-1 {
+    fill: #bbf7d0;
+    stroke: #22c55e;
+}
+
+/* Medium */
+
+.color-scale-2 {
+    fill: #86efac;
+    stroke: #16a34a;
+}
+
+/* High */
+
+.color-scale-3 {
+    fill: #4ade80;
+    stroke: #15803d;
+}
+
+/* Extreme */
+
+.color-scale-4 {
+    fill: #16a34a;
+    stroke: #166534;
+}
+
+/* ================= TODAY HIGHLIGHT ================= */
+
+.react-calendar-heatmap rect.today {
+    stroke: #3b82f6;
+    stroke-width: 2px;
+    filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.6));
+}
+
+/* ================= LABELS ================= */
+
+.react-calendar-heatmap text {
+    font-size: 11px;
+    fill: #9ca3af;
+}
+
+.react-calendar-heatmap-weekday-label {
+    font-size: 11px;
+    fill: #9ca3af;
+}
+
+/* ================= MOBILE OPTIMIZATION ================= */
+
+@media (max-width: 640px) {
+
+    .react-calendar-heatmap rect {
+        width: 11px;
+        height: 11px;
+    }
+
+    .glass,
+    .card {
+        border-radius: 14px;
+    }
+
+}
+
+/* ================= SCROLLBAR (Premium Look) ================= */
+
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3b82f6, #22c55e);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 1.5s infinite;
+}
