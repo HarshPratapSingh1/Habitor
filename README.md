@@ -1,9 +1,9 @@
-# 🚀 TrackForge — CP & GATE Study Tracker
+# 🚀 Habitor — CP & GATE Study Tracker
 
-TrackForge is a **full-stack productivity & analytics platform** built for **competitive programmers and GATE aspirants**.  
+Habitor is a **full-stack productivity & analytics platform** built for **competitive programmers and GATE aspirants**.  
 It helps you **track daily study sessions, maintain streaks, monitor syllabus progress, manage goals, and generate premium reports** — all in one place.
 
-> “Consistency beats intensity. TrackForge helps you stay consistent.”
+> “Consistency beats intensity. Habitor helps you stay consistent.”
 
 ---
 
@@ -120,7 +120,7 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 🚀 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/trackforge.git
+git clone https://github.com/your-username/Habitor.git
 cd trackforge
 
 2️⃣ Install Dependencies
